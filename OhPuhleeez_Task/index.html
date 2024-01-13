@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"
+    ></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js"></script>
+    <title>Event Registration Page</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Header Section -->
+    <header class="bg-black p-4 text-white">
+      <div class="container mx-auto flex justify-between items-center">
+        <div>
+          <img
+            src="assets\pngaaa.com-5422165 (1).png"
+            alt="Event Logo"
+            class="w-20 h-auto"
+          />
+          <!-- <span class="ml-2 text-xl font-semibold">Event Name</span> -->
+        </div>
+        <nav class="space-x-4">
+          <a href="#event-details" class="header-link text-xl">Event Details</a>
+          <a href="#registration-form" class="header-link text-xl"
+            >Registration Form</a
+          >
+          <a href="#faqs" class="header-link text-xl">FAQs</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="py-8 text-black">
+      <div class="container mx-auto event-details-container">
+        <div class="event-details-image">
+          <img
+            src="assets\pngwing.com (1).png"
+            alt="Event Image"
+            class="w-full h-auto"
+          />
+        </div>
+        <div class="event-details-description">
+          <h2 class="text-3xl font-semibold mb-4">Event Details</h2>
+          <p class="mb-4">
+            <b>oh Puhleeez Branding Agency</b> recently conducted a pool campus
+            placement drive at
+            <b>Arya College of Engineering and IT, Jaipur</b> . The agency
+            sought skilled individuals for diverse roles, including Front-end
+            Web Developer, Back-end Developer, Business Analyst, Video Editor,
+            and Graphic Designer. Students had the chance to showcase their
+            talents for crafting user-friendly interfaces, developing backend
+            logic, analyzing business processes, editing engaging videos, and
+            creating visually stunning graphics. The event aimed to bring
+            dynamic and creative minds to contribute to the agency's growth in
+            the field of branding and design.
+          </p>
+          <p class="mb-4">
+            <strong>Date:</strong> January 20, 2024 - January 21, 2024
+          </p>
+          <p class="mb-4"><strong>Time:</strong> 9:00 AM - 8:00 PM</p>
+          <p class="mb-4">
+            <strong>Venue:</strong> Arya College of Engineering and IT, Jaipur
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration-form" class="py-8 bg-black">
+      <div class="container mx-auto registration-form-container">
+        <div class="registration-form-description">
+          <h2 class="text-3xl font-semibold mb-4 text-white text-center">
+            Registration For placement Drive
+          </h2>
+          <form id="registrationForm" class="max-w-md mx-auto">
+            <!-- Form fields go here -->
+            <div class="mb-4">
+              <label
+                for="fullName"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="email"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Email Address</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="phone"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="collegeName"
+                class="block text-sm font-medium text-white-600 text-white"
+              >
+                College Name</label
+              >
+              <select
+                id="collegeName"
+                name="collegeName"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              >
+                <option value="Arya College Of Engg. & I.T.">
+                  Arya College of engineering in IT
+                </option>
+                <option value="J.E.C.R.C ">J.E.C.R.C College</option>
+                <option value="Purnima College">Purnima College</option>
+                <option value="Shankara College">Shankara College</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="year"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Year of Study</label
+              >
+              <input
+                type="text"
+                id="year"
+                name="year"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="jobRole"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Job Role</label
+              >
+              <select
+                id="jobRole"
+                name="jobRole"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              >
+                <option value="front-end">Front-end Web Developer</option>
+                <option value="back-end">Back-end Developer</option>
+                <option value="business-analysis">Business Analysis</option>
+                <option value="video-editor">Video Editor</option>
+                <option value="graphic-designer">Graphic Designer</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="resume"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Upload Resume</label
+              >
+              <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf, .doc, .docx"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label
+                for="participationType"
+                class="block text-sm font-medium text-white-600 text-white"
+                >Participation Type</label
+              >
+              <select
+                id="participationType"
+                name="participationType"
+                class="mt-1 p-2 w-full border rounded-md text-black"
+              >
+                <option value="attendee">Attendee</option>
+                <option value="volunteer">Volunteer</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <button
+                type="button"
+                onclick="validateForm()"
+                class="bg-white text-black py-3 px-4 rounded-md hover:bg-gray-200"
+              >
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="registration-form-image">
+          <img
+            src="assets\pngwing.com (2).png"
+            alt="Registration Image"
+            class="w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+
+    <body class="h-screen bg-blue-50">
+      <main class="p-5 bg-light-blue">
+        <div class="flex justify-center items-start my-2">
+          <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+            <h2 class="text-xl font-bold text-black mb-2">FAQ :-</h2>
+            <ul class="flex flex-col">
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black"
+                    >How can I register for the event?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  x-ref="tab"
+                  :style="handleToggle()"
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                >
+                  <p class="p-3 text-gray-900">
+                    To register for the event, fill out the registration form
+                    available on this page. Ensure you provide accurate and
+                    complete information
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black"
+                    >What is the deadline for registration?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Once shipped, you’ll get a confirmation email that includes
+                    a tracking number and additional information regarding
+                    tracking your order.
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black">
+                    Can I register for multiple job roles?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    No, each participant can register for only one job role.
+                    Please choose the role that aligns best with your skills and
+                    interests.
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black">
+                    Is there any specific document required for
+                    registration?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Yes, you will need to upload your resume during the
+                    registration process. Ensure your resume is up-to-date and
+                    reflects your qualifications and experiences.
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black"
+                    > How can I change or update my registration details after submission?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Unfortunately, after submission, you cannot directly edit your registration details. If you need to make changes, please contact the event organizers for assistance.
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black"
+                    >Are there any prerequisites for the technical roles (Front-end Developer, Back-end Developer, etc.)?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    Yes, each technical role may have specific prerequisites. Please review the job descriptions on the registration form for details on required skills and qualifications.
+                  </p>
+                </div>
+              </li>
+              <li class="bg-white my-2 shadow-lg" x-data="accordion(7)">
+                <h2
+                  @click="handleClick()"
+                  class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                >
+                  <span class="text-black"
+                    >What is the dress code for the event?</span
+                  >
+                  <svg
+                    :class="handleRotate()"
+                    class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"
+                    ></path>
+                  </svg>
+                </h2>
+                <div
+                  class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                  x-ref="tab"
+                  :style="handleToggle()"
+                >
+                  <p class="p-3 text-gray-900">
+                    The dress code for the event will be mentioned in the event guidelines. Participants are generally advised to dress professionally.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </body>
+
+    <!-- Call-to-Action Section -->
+    <section class="py-8 bg-gray-500 text-white text-center">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold mb-4">Ready For Placement?</h2>
+        <a
+          href="#registration-form"
+          class="bg-white text-blue-500 py-2 px-4 rounded-md hover:bg-gray-200"
+          >Register Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-4 bg-gray-800 text-white">
+      <div class="container mx-auto text-center">
+        <p>Contact: contact@example.com</p>
+        <div class="mt-2">
+          <a href="#" class="mr-4">Facebook</a>
+          <a href="#" class="mr-4">Twitter</a>
+          <a href="#" class="mr-4">Instagram</a>
+        </div>
+        <p class="mt-2">© 2024 Your Event. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

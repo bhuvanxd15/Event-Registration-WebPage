@@ -1,0 +1,33 @@
+body {
+    background-color: #fff;
+    color: white;
+}
+
+.header-link:hover {
+    color: #888;
+    transition: color 0.3s;
+}
+
+.event-details-container,
+.registration-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.event-details-image,
+.registration-form-image {
+    flex: 1;
+    margin: 0 16px 16px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.event-details-description,
+.registration-form-description {
+    flex: 1;
+}
+
